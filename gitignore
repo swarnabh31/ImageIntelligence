@@ -1,0 +1,42 @@
+# --- Vector DB / personal data ---
+# Contains embeddings derived from your indexed photos. Never commit this —
+# both for repo size and because it's effectively a searchable index of
+# whatever you scanned.
+chroma_db/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Environment / secrets ---
+.env
+.env.local
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Model cache (if downloaded locally instead of HF cache dir) ---
+*.bin
+*.safetensors
+models_cache/
+
+# --- Logs ---
+*.log

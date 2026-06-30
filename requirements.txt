@@ -1,0 +1,21 @@
+# Local Image Intelligence Portal — Python dependencies
+# Install with: pip install -r requirements.txt
+#
+# NOTE: Tesseract OCR itself is a separate system-level install, not a
+# pip package — see README.md prerequisites section.
+#
+# NOTE: torch should match your CUDA version / GPU driver. The line below
+# installs a CPU/default build via PyPI. For GPU acceleration, install
+# torch first using the command generated at https://pytorch.org/get-started/locally/
+# (selecting your CUDA version), THEN run this file so pip doesn't
+# overwrite it with a CPU-only build.
+
+streamlit>=1.35
+torch>=2.2
+transformers>=4.40
+chromadb>=0.5
+opencv-python>=4.9
+imagehash>=4.3
+pytesseract>=0.3.10
+numpy>=1.26
+Pillow>=10.2
